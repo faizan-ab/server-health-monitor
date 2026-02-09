@@ -36,3 +36,7 @@ The health check runs every 5 minutes:
 #Explanation
 In real environments, servers can fail due to high CPU, memory, or disk usage.
 This project proactively monitors system health and prevents disk-full issues using automation.
+
+## 🏗 Architecture Diagram
+![Architecture](diagrams/health-monitor-architecture.png)
+
