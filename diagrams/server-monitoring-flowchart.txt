@@ -1,0 +1,25 @@
+┌──────────────┐
+│   Cron Job   │
+│ (Every 5min) │
+└──────┬───────┘
+       │
+       ▼
+┌──────────────────────┐
+│ health_check.sh      │
+│ (Master Script)      │
+└───┬─────┬─────┬──────┘
+    │     │     │
+    ▼     ▼     ▼
+┌──────┐ ┌──────┐ ┌──────┐
+│ CPU  │ │ MEM  │ │ DISK │
+│Check │ │Check │ │Check │
+└──┬───┘ └──┬───┘ └──┬───┘
+   │         │         │
+   ▼         ▼         ▼
+ OK/HIGH   OK/HIGH   OK/HIGH
+                         │
+                         ▼
+                Auto Log Cleanup
+                         │
+                         ▼
+              Central Log File
